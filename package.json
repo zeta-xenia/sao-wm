@@ -1,0 +1,15 @@
+{
+	"name": "sao-wm",
+	"version": "1.0.0",
+	"description": "A generator for ES6 based module",
+	"repository": "https://github.com/KsRyY/sao-wm",
+	"author": "KsRyY",
+	"license": "MIT",
+	"devDependencies": {
+		"jest": "^24.9.0",
+		"sao": "^1.7.0"
+	},
+	"dependencies": {
+		"validate-npm-package-license": "^3.0.4"
+	}
+}

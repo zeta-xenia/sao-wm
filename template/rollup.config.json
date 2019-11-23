@@ -1,0 +1,14 @@
+{
+	"umdOutput": {
+		"file": "./dist/template.umd.js",
+		"name": "template",
+		"type": "umd",
+		"sourcemap": true
+	},
+	"esmOutput": {
+		"file": "./dist/template.esm.js",
+		"name": "template",
+		"type": "esm",
+		"sourcemap": true
+	}
+}
