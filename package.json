@@ -8,6 +8,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"ava": "^2.4.0",
+		"coveralls": "^3.0.8",
 		"nyc": "^14.1.1",
 		"sao": "^1.7.0"
 	},
@@ -15,7 +16,7 @@
 		"validate-npm-package-license": "^3.0.4"
 	},
 	"scripts": {
-		"test": "ava --verbose",
-		"cover": "nyc ava --verbose"
+		"test": "nyc ava --verbose",
+		"cover": "nyc report --reporter=text-lcov | coveralls"
 	}
 }
