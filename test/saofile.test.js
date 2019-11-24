@@ -27,3 +27,18 @@ test('generator with custom answers', async t => {
 	t.is(packageJson.license, 'BSD-2-Clause');
 	t.is(packageJson.author, 'AVA');
 })
+
+test('generator with invalid license', async t => {
+	const answers = {
+		name: 'template',
+		description: 'tested by AVA',
+		license: 'BSD 2 Clause',
+		author: 'AVA'
+	}
+	const stream = await mock({ generator }, answers);
+	const packageJson = JSON.parse(await stream.readFile('package.json'));
+	t.is(packageJson.name, 'template');
+	t.is(packageJson.description, 'tested by AVA');
+	t.is(packageJson.license, 'MIT');
+	t.is(packageJson.author, 'AVA');
+})
