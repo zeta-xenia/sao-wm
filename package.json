@@ -7,10 +7,10 @@
 	"author": "KsRyY",
 	"license": "MIT",
 	"devDependencies": {
-		"ava": "^2.4.0",
-		"coveralls": "^3.0.8",
-		"nyc": "^14.1.1",
-		"sao": "^1.7.0"
+		"ava": "2.4.0",
+		"coveralls": "3.0.8",
+		"nyc": "14.1.1",
+		"sao": "1.7.0"
 	},
 	"dependencies": {
 		"validate-npm-package-license": "^3.0.4"
