@@ -1,4 +1,10 @@
 {
+	"name": "<%= name %>",
+	"description": "<%= description %>",
+	"author": "<%= author %>",
+	"license": "<%= license %>",
+	"main": "./dist/<%= name %>.esm.js",
+	"unpkg": "./dist/<%= name %>.umd.js",
 	"version": "1.0.0",
 	"devDependencies": {
 		"@babel/core": "^7.7.2",

@@ -55,34 +55,6 @@ module.exports = {
 			{
 				type: 'add',
 				files: '**'
-			},
-			{
-				type: 'modify',
-				files: 'package.json',
-				handler(contnent) {
-					let data = contnent
-					data.name = this.answers.name
-					data.description = this.answers.description
-					data.unpkg = `${this.answers.name}.umd.js`
-					data.main = `${this.answers.name}.esm.js`
-					data.license = this.answers.license
-					data.author = this.answers.author
-					return data
-				}
-			},
-			{
-				type: 'modify',
-				files: 'rollup.config.json',
-				handler(contnent) {
-					let data = contnent
-					data.umdOutput.name = this.answers.name
-					data.umdOutput.file = `./dist/$[this.answers.name}.umd.js`
-					data.umdOutput.sourcemap = this.answers.sourcemap
-					data.esmOutput.name = this.answers.name
-					data.esmOutput.file = `./dist/$[this.answers.name}.esm.js`
-					data.esmOutput.sourcemap = this.answers.sourcemap
-					return data
-				}
 			}
 		]
 	},

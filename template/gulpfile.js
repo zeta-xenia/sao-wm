@@ -4,7 +4,6 @@ const { terser } = require('rollup-plugin-terser');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
 const babel = require('rollup-plugin-babel');
-const rollupOutputConfig = require('./rollup.config.json');
 
 const umd = async function () {
 	const bundle = await rollup({
@@ -17,7 +16,12 @@ const umd = async function () {
 		]
 	});
 
-	await bundle.write(rollupOutputConfig.umdOutput)
+	await bundle.write({
+		"file": "./dist/<%= name %>.umd.js",
+		"name": "<%= name %>",
+		"type": "umd",
+		"sourcemap": <%= sourcemap %>
+	})
 }
 
 const esm = async function () {
@@ -32,7 +36,12 @@ const esm = async function () {
 		]
 	});
 
-	await bundle.write(rollupOutputConfig.esmOutput)
+	await bundle.write({
+		"file": "./dist/<%= name %>.esm.js",
+		"name": "<%= name %>",
+		"type": "esm",
+		"sourcemap": <%= sourcemap %>
+	})
 }
 
 exports.esm = esm;

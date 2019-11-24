@@ -1,5 +1,5 @@
-# cgridss
+# sao-wm
 
-*A framework-agnostic and elegant CSS Grid generator powered by CSS-in-JS*
+*A SAO.js based project scaffolding generator for JS code transpilation for browser.*
 
 # Getting started
