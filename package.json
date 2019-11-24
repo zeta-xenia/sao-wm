@@ -17,6 +17,6 @@
 	},
 	"scripts": {
 		"test": "nyc ava --verbose",
-		"cover": "nyc report --reporter=text-lcov | coveralls"
+		"cover": "nyc report --reporter=lcov"
 	}
 }
