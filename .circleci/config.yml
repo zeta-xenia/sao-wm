@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  node8:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn test
+  node10:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn test
+  node12:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn test
+workflows:
+  version: 2
+  nodejs:
+    jobs:
+      - node8
+      - node10
+      - node12
