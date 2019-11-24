@@ -27,3 +27,8 @@ sao KsRyY/sao-wm
 ``` bash
 sao wm
 ```
+
+## Why the coverage is not 100%?
+
+See line 62,63,64 of the [source code](saofile.js).
+Currently there is no way to test these three lines with test suites provided by SAO.
