@@ -1,5 +1,5 @@
 # sao-wm
-[![CircleCI](https://circleci.com/gh/KsRyY/sao-wm.svg?style=svg)](https://circleci.com/gh/KsRyY/sao-wm) [![Coverage Status](https://coveralls.io/repos/github/KsRyY/sao-wm/badge.svg?branch=master)](https://coveralls.io/github/KsRyY/sao-wm?branch=master)
+[![Github Actions](https://github.com/KsRyY/sao-wm/workflows/CI/badge.svg)](https://github.com/KsRyY/sao-wm/commits/master) [![CircleCI](https://circleci.com/gh/KsRyY/sao-wm.svg?style=svg)](https://circleci.com/gh/KsRyY/sao-wm) [![Coverage Status](https://coveralls.io/repos/github/KsRyY/sao-wm/badge.svg?branch=master)](https://coveralls.io/github/KsRyY/sao-wm?branch=master)
 
 *Scaffolding out a web module.*
 
