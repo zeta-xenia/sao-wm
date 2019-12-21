@@ -5,20 +5,25 @@
 	"license": "<%= license %>",
 	"main": "./dist/<%= name %>.esm.js",
 	"unpkg": "./dist/<%= name %>.umd.js",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"devDependencies": {
 		"@babel/core": "7.7.7",
 		"@babel/preset-env": "7.7.7",
-		"eslint": "6.7.2",
-		"eslint-config-airbnb-base": "14.0.0",
+		"@rollup/plugin-node-resolve": "6.0.0",
+		"eslint-config-prettier": "6.7.0",
+		"eslint-config-rem": "4.0.0",
 		"eslint-plugin-import": "2.18.2",
+		"eslint-plugin-prettier": "3.1.2",
 		"gulp": "4.0.2",
+		"husky": "3.1.0",
+		"lint-staged": "10.0.0-beta.13",
+		"prettier": "1.19.1",
 		"rollup": "1.27.13",
 		"rollup-plugin-babel": "4.3.3",
 		"rollup-plugin-commonjs": "10.1.0",
 		"rollup-plugin-node-builtins": "2.1.2",
-		"rollup-plugin-node-resolve": "5.2.0",
-		"rollup-plugin-terser": "5.1.3"
+		"rollup-plugin-terser": "5.1.3",
+		"xo": "0.25.3"
 	},
 	"browserslist": [
 		"> 1%",
@@ -31,5 +36,26 @@
 		"build:esm": "gulp esm",
 		"build:umd": "gulp umd",
 		"watch": "gulp watch"
+	},
+	"xo": {
+		"extends": [
+			"rem",
+			"plugin:prettier/recommended"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"precommit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"xo --fix",
+			"git add"
+		],
+		"*.{json,md}": [
+			"prettier --write",
+			"git add"
+		]
 	}
 }
