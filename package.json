@@ -1,6 +1,6 @@
 {
 	"name": "sao-wm",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "A generator for ES6 based module",
 	"main": "saofile.js",
 	"repository": "https://github.com/KsRyY/sao-wm",
