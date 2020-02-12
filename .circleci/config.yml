@@ -49,6 +49,6 @@ workflows:
   version: 2
   nodejs:
     jobs:
-      - node8
       - node10
       - node12
+      - node13
