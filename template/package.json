@@ -23,7 +23,7 @@
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-terser": "5.2.0",
-    "xo": "0.27.1"
+    "xo": "0.27.2"
   },
   "browserslist": [
     "> 1%",
