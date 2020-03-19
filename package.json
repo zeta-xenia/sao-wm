@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "3.5.0",
-    "coveralls": "3.0.8",
+    "coveralls": "3.0.11",
     "nyc": "15.0.0",
     "sao": "1.7.0"
   },
