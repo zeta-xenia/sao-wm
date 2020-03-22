@@ -10,7 +10,7 @@
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.0",
     "@rollup/plugin-node-resolve": "7.1.1",
-    "eslint-config-prettier": "6.10.0",
+    "eslint-config-prettier": "6.10.1",
     "eslint-config-rem": "4.0.0",
     "eslint-plugin-import": "2.20.1",
     "eslint-plugin-prettier": "3.1.2",
