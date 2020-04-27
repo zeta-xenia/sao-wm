@@ -7,7 +7,7 @@
   "author": "KsRyY",
   "license": "MIT",
   "devDependencies": {
-    "ava": "3.8.0",
+    "ava": "3.8.1",
     "coveralls": "3.1.0",
     "nyc": "15.0.1",
     "sao": "1.7.0"
