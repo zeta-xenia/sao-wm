@@ -5695,10 +5695,10 @@ safe-regex@^2.1.1:
   resolved "https://registry.npm.taobao.org/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
 
-sao@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.npm.taobao.org/sao/download/sao-1.7.0.tgz#19b61f95c62b3f71550c8d8911c88bb7d9ef49df"
-  integrity sha1-GbYflcYrP3FVDI2JEciLt9nvSd8=
+sao@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/sao/-/sao-1.7.1.tgz#d45bb34c0d539e71b2e70a0f5999cf4953002dc4"
+  integrity sha512-g4VGkyvpZ+n+k7Pp+Qc9Yoy2wGFi7FstLZoLxwiMhjn4n4gCStQJ873weCITAD1ocKbKL7HyKDNnC4yTqievsw==
   dependencies:
     cac "^6.3.8"
     chalk "^2.4.1"
