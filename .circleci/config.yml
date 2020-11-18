@@ -30,9 +30,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
-  node13:
+  node14:
     docker:
-      - image: circleci/node:13
+      - image: circleci/node:14
     steps:
       - checkout
       - restore_cache:
@@ -51,4 +51,4 @@ workflows:
     jobs:
       - node10
       - node12
-      - node13
+      - node14
