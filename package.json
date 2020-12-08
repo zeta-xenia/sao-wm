@@ -20,7 +20,7 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.0.0",
     "validate-npm-package-license": "^3.0.4",
-    "xo": "^0.35.0"
+    "xo": "^0.36.0"
   },
   "scripts": {
     "test": "nyc ava --verbose",
